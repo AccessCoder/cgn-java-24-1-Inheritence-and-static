@@ -1,6 +1,6 @@
 package de.neuefische;
 
-public class Piano extends Instrument{
+public class Piano extends Instrument {
 
     private int numberOfOctaves;
 
@@ -15,6 +15,11 @@ public class Piano extends Instrument{
 
     public void setNumberOfOctaves(int numberOfOctaves) {
         this.numberOfOctaves = numberOfOctaves;
+    }
+
+    @Override
+    public void makeNoise() {
+        System.out.println("Piano Sounds");
     }
 
     @Override

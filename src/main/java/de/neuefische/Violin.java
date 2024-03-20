@@ -20,8 +20,8 @@ public class Violin extends Instrument{
     }
 
     @Override
-    public void makeNoise(){
-        System.out.println("The Violin plays a beautiful sound");
+    public void makeNoise() {
+        System.out.println("Violin Sounds");
     }
 
     @Override

@@ -12,13 +12,13 @@ public class Main {
                 200.00, "Red", 4
         );
 
-        System.out.println(piano.getMaterial());
-        System.out.println(violin.getMaterial());
-        violin.changeMaterial("Metal");
-        Instrument.material = "Rubber";
-        System.out.println(piano.getMaterial());
-        System.out.println(violin.getMaterial());
+        Handy handy1 = new Handy();
 
+
+
+        CanMakeNoise guitar = new Handy();
+
+        recordNoise(guitar);
 
     }
 
@@ -26,4 +26,11 @@ public class Main {
     public static void printInstrument(Instrument instrument){
         System.out.println(instrument);
     }
+
+    public static void recordNoise(CanMakeNoise canMakeNoise){
+        System.out.println("Sound Check");
+        canMakeNoise.makeNoise();
+        System.out.println("=====================");
+    }
+
 }
